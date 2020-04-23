@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&family=Ubuntu:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bahianita&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+
+  font-size: 10px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 10px;
+  background-color: rgb(0, 0, 0);
+  color: #f2f0f0;
+}
+/*=============================================================Header Starts================================================= */
+nav {
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  position: sticky;
+  top: 0rem;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header img {
+  height: 5rem;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header img:hover {
+  background: #ff0000;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  padding: 0 2rem;
+  color: #f2f0f0;
+  font-weight: bold;
+  line-height: 3;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+nav ul li a.present {
+  color: #61c783;
+}
+nav ul li a:hover {
+  background: #ff0000;
+  color: #ffffff;
+}
+/* ===========================================================Header Ends================================================== */
+/*========================================================Start For Homepage================================================= */
+.image img {
+  width: 98%;
+}
+
+.mainbody p {
+  margin: 0 2rem 2rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
+}
+/*========================================================End For Homepage================================================= */
+/*========================================================Portfolio Starts================================================  */
+.port {
+  background-image: url(../static/22.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 4rem auto;
+}
+
+.landscape {
+  width: 35%;
+  height: 30rem;
+  background-color: ivory;
+  margin: auto;
+}
+.landscape img {
+  width: 90%;
+  height: 90%;
+  margin: 1.5rem 0 0 2.3rem;
+  transition: 1s;
+}
+.landscape img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+/*========================================================Portfolio Ends=================================================== */
+/*===========================================================CV Starts====================================================  */
+.store {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+}
+.fdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  border-bottom: 2px solid;
+}
+
+.pp {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+}
+.pp img {
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 60%;
+  margin-left: 4rem;
+}
+.personal {
+  width: 60%;
+}
+.personal h3 {
+  font-size: 4rem;
+  margin: auto;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.personal p {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.edu {
+  width: 50%;
+  border-right: 2px solid black;
+  margin-left: 2rem;
+}
+.edu h3 {
+  font-size: 4rem;
+  margin: auto;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.edu li {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.skills {
+  width: 50%;
+
+  margin-left: 2rem;
+}
+.skills h3 {
+  font-size: 4rem;
+  margin: auto;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.skills li {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.interest {
+  width: 50%;
+  border-right: 2px solid black;
+  margin-left: 2rem;
+}
+.interest h3 {
+  font-size: 4rem;
+  margin: auto;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.interest li {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.occupation {
+  width: 50%;
+
+  margin-left: 2rem;
+}
+.occupation h3 {
+  font-size: 4rem;
+  margin: auto;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.occupation p {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+/*===========================================================CV Ends======================================================= */
+/*========================================================Contact Starts================================================== */
+.contact {
+  background-image: url(../static/24.jpg);
+  background-position: bottom;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+section {
+  width: 40rem;
+  height: 45rem;
+  background-image: url(../static/23.jpg);
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 2rem;
+  background-size: cover;
+  margin: 5rem auto 5rem auto;
+}
+.input {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  margin: 1.5rem auto;
+  font-size: 1.4rem;
+  padding: 1.1rem 0;
+  color: lightyellow;
+  font-size: 2rem;
+  text-transform: none;
+  font-family: "Inconsolata", monospace;
+  background-color: transparent;
+}
+.submit {
+  display: flex;
+  background-color: white;
+  padding: 1.5rem;
+  font-family: "Bangers", cursive;
+  font-size: 1.6rem;
+  margin: auto;
+  color: black;
+}
+::placeholder {
+  color: lightgoldenrodyellow;
+  opacity: 0.6;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 20000000s;
+  -webkit-text-fill-color: #fff !important;
+}
+/*======================================================== Footer Starts=================================================== */
+footer {
+  background-color: black;
+  bottom: 0rem;
+  width: 100%;
+  height: 5rem;
+  position: relative;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.copy {
+  justify-content: flex-start;
+  margin-top: 2rem;
+  color: #ffffff;
+  font-size: 1.6rem;
+  /* font-family: "Bebas Neue", cursive; */
+}
+
+.bottom img {
+  height: 5rem;
+  justify-content: center;
+}
+.social_media {
+  display: flex;
+  justify-content: flex-end;
+}
+.social_media img {
+  height: 5rem;
+  border-radius: 3rem;
+}
+.social_media img:hover {
+  background: #ff0000;
+}
+/* ========================================================Footer Ends=================================================== */
+@media (max-width: 600px) {
+  nav {
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+  }
+  .header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .header img:hover {
+    background: black;
+  }
+
+  .header ul {
+    width: 100%;
+    flex-direction: column;
+    margin-left: -1rem;
+    /* width: 50%; */
+    /* border: 1px solid yellow; */
+  }
+  .header ul li {
+    width: 100%;
+  }
+
+  .header ul li a {
+    width: 100%;
+    line-height: 2.5;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  nav ul li a:hover {
+    background: black;
+  }
+
+  .photo1 {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+  .landscape {
+    width: 95%;
+    margin: 2rem auto;
+  }
+  .landscape img {
+    width: 95%;
+    margin-left: 0.8rem;
+  }
+  .landscape img:hover {
+    transform: scale(1);
+    overflow: hidden;
+  }
+  .store {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .fdiv {
+    flex-direction: column;
+    border: none;
+  }
+  .pp img {
+    margin-left: 9rem;
+    margin-bottom: 2rem;
+  }
+  .personal {
+    margin-left: 10rem;
+  }
+
+  .edu,
+  .skills,
+  .interest,
+  .occupation {
+    margin-left: 10rem;
+    border-right: none;
+  }
+  .personal h3,
+  .edu h3,
+  .skills h3,
+  .interest h3,
+  .occupation h3 {
+    font-size: 2rem;
+  }
+  .personal p,
+  .edu li,
+  .skills li,
+  .interest li,
+  .occupation p {
+    font-size: 1.6rem;
+  }
+  .personal,
+  .skills,
+  .edu,
+  .interest {
+    border-bottom: 2px solid black;
+    border-width: 100%;
+  }
+  section {
+    width: 98%;
+  }
+  footer {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .copy {
+    order: 3;
+    margin: auto;
+  }
+  .bottom {
+    margin: auto;
+  }
+  .social_media {
+    display: flex;
+    flex-direction: row;
+    margin-left: -1.3rem;
+    width: 100%;
+  }
+  .social_media img {
+    padding: 0 2rem;
+  }
+  .social_media img:hover {
+    background-color: black;
+  }
+}
