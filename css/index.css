@@ -6,7 +6,6 @@
 * {
   margin: 0px;
   padding: 0px;
-
   font-size: 10px;
 }
 body {
@@ -25,7 +24,7 @@ nav {
   border-bottom: 1px solid rgb(255, 255, 255);
   position: sticky;
   top: 0rem;
-  overflow: hidden;
+  
 }
 .header {
   display: flex;
@@ -34,11 +33,9 @@ nav {
 .header img {
   height: 5rem;
 }
-
 .header ul {
   display: flex;
 }
-
 .header img:hover {
   background: #ff0000;
 }
@@ -68,13 +65,11 @@ nav ul li a:hover {
 .image img {
   width: 98%;
 }
-
 .mainbody p {
   margin: 0 2rem 2rem 2rem;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
-
   font-family: "Ubuntu", sans-serif;
   font-size: 1.3rem;
 }
@@ -86,7 +81,6 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .photo1 {
   width: 100%;
   display: flex;
@@ -95,7 +89,6 @@ nav ul li a:hover {
   overflow: hidden;
   margin: 4rem auto;
 }
-
 .landscape {
   width: 35%;
   height: 30rem;
@@ -112,7 +105,6 @@ nav ul li a:hover {
   transform: scale(1.1);
   overflow: hidden;
 }
-
 /*========================================================Portfolio Ends=================================================== */
 /*===========================================================CV Starts====================================================  */
 .store {
@@ -128,18 +120,15 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   width: 100%;
   border-bottom: 2px solid;
 }
-
 .pp {
   width: 40%;
   display: flex;
-  justify-content: flex-start;
 }
 .pp img {
-  display: flex;
+  border: 5px solid rgba(0, 0,0, 0.06);
   width: 20rem;
   height: 20rem;
   border-radius: 60%;
@@ -148,85 +137,32 @@ nav ul li a:hover {
 .personal {
   width: 60%;
 }
-.personal h3 {
+.personal h3,.skills h3,.edu h3,.interest h3,.occupation h3 {
   font-size: 4rem;
   margin: auto;
   font-weight: 700;
   text-decoration: underline;
 }
-.personal p {
+.personal p,.edu li,.skills li,.interest li,.occupation li {
   font-size: 2.5rem;
   font-weight: 400;
 }
-.edu {
+.edu,.interest {
   width: 50%;
   border-right: 2px solid black;
   margin-left: 2rem;
 }
-.edu h3 {
-  font-size: 4rem;
-  margin: auto;
-  font-weight: 700;
-  text-decoration: underline;
-}
-.edu li {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-.skills {
+.skills, .occupation  {
   width: 50%;
-
-  margin-left: 2rem;
+ margin-left: 2rem;
 }
-.skills h3 {
-  font-size: 4rem;
-  margin: auto;
-  font-weight: 700;
-  text-decoration: underline;
-}
-.skills li {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-.interest {
-  width: 50%;
-  border-right: 2px solid black;
-  margin-left: 2rem;
-}
-.interest h3 {
-  font-size: 4rem;
-  margin: auto;
-  font-weight: 700;
-  text-decoration: underline;
-}
-.interest li {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-.occupation {
-  width: 50%;
-
-  margin-left: 2rem;
-}
-.occupation h3 {
-  font-size: 4rem;
-  margin: auto;
-  font-weight: 700;
-  text-decoration: underline;
-}
-.occupation p {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
 /*===========================================================CV Ends======================================================= */
 /*========================================================Contact Starts================================================== */
 .contact {
   background-image: url(../static/24.jpg);
   background-position: bottom;
   background-size: cover;
-
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
 }
 section {
   width: 40rem;
@@ -288,12 +224,11 @@ footer {
   margin-top: 2rem;
   color: #ffffff;
   font-size: 1.6rem;
-  /* font-family: "Bebas Neue", cursive; */
 }
-
 .bottom img {
   height: 5rem;
   justify-content: center;
+  margin-left: 14rem;
 }
 .social_media {
   display: flex;
@@ -302,19 +237,20 @@ footer {
 .social_media img {
   height: 5rem;
   border-radius: 3rem;
+  padding: 0 1.2rem;
 }
 .social_media img:hover {
   background: #ff0000;
 }
 /* ========================================================Footer Ends=================================================== */
+/* ===============================================Media query for mobile starts====================================== */
 @media (max-width: 600px) {
   nav {
     height: 20rem;
     width: 100%;
     display: flex;
     justify-content: center;
-
-    position: relative;
+  position: relative;
   }
   .header {
     flex-direction: column;
@@ -323,31 +259,25 @@ footer {
   .header img:hover {
     background: black;
   }
-
-  .header ul {
+.header ul {
     width: 100%;
     flex-direction: column;
     margin-left: -1rem;
-    /* width: 50%; */
-    /* border: 1px solid yellow; */
   }
   .header ul li {
     width: 100%;
   }
-
-  .header ul li a {
+ .header ul li a {
     width: 100%;
     line-height: 2.5;
     padding-top: 0.5rem;
     text-align: center;
     font-size: 1.2rem;
   }
-
   nav ul li a:hover {
     background: black;
   }
-
-  .photo1 {
+ .photo1 {
     width: 100%;
     flex-direction: column;
     margin: 0;
@@ -372,19 +302,21 @@ footer {
     flex-direction: column;
     border: none;
   }
+  .pp{
+      width: 100%;
+  }
   .pp img {
-    margin-left: 9rem;
+    margin: auto;
     margin-bottom: 2rem;
   }
   .personal {
-    margin-left: 10rem;
+    margin:auto
   }
-
   .edu,
   .skills,
   .interest,
   .occupation {
-    margin-left: 10rem;
+    margin:auto;
     border-right: none;
   }
   .personal h3,
@@ -393,13 +325,18 @@ footer {
   .interest h3,
   .occupation h3 {
     font-size: 2rem;
+    text-align: center;
   }
-  .personal p,
+  .personal p{
+    font-size: 1.6rem;
+    text-align: center;
+  }
   .edu li,
   .skills li,
   .interest li,
-  .occupation p {
+  .occupation li{
     font-size: 1.6rem;
+    margin: auto;
   }
   .personal,
   .skills,
@@ -423,12 +360,13 @@ footer {
     margin: auto;
   }
   .bottom {
-    margin: auto;
+    margin-left: -4rem;
+    margin-bottom: 2rem;
   }
   .social_media {
     display: flex;
     flex-direction: row;
-    margin-left: -1.3rem;
+    justify-content: center;
     width: 100%;
   }
   .social_media img {
@@ -438,3 +376,252 @@ footer {
     background-color: black;
   }
 }
+/*==============================================Media query for mobile ends===================================== */
+/*========================================= Media query for 27" display starts===================================*/
+@media (min-width:2560px){
+  nav {
+    height: 10rem;
+    width: 100%;
+  }
+  .header img{
+    height: 10rem;
+  }
+  nav ul li a {
+      padding: 1rem 5rem;
+      font-size: 3rem;
+ }
+    .mainbody p{
+      font-size: 2.8rem;
+    }
+   .photo1 {
+    width: 100%;
+    margin: 5rem auto;
+ }
+ .landscape{
+   width: 40%;
+   height: 70rem;
+   margin-bottom: 5rem;
+  margin-top: 5rem;
+  }
+  .landscape img {
+    width: 95%;
+    margin-top: 3.5rem;
+    margin-left: 2.3rem;
+  }
+  .landscape img:hover {
+  
+    overflow: hidden;
+  }
+  .pp img{
+    width: 38rem;
+    height: 38rem;
+  }
+  .personal {
+    margin:auto;
+  }
+    .personal h3,
+  .edu h3,
+  .skills h3,
+  .interest h3,
+  .occupation h3 {
+    font-size: 6.5rem;
+  }
+  .personal p,
+   .edu li,
+  .skills li,
+  .interest li,
+  .occupation li{
+    font-size: 4.4rem;
+  }
+    section{
+    height: 100rem;
+    width: 80rem;
+    margin-top:8rem;
+    border-radius: 4rem;
+  }
+  .input{
+    margin-top: 3rem;
+    padding:3rem 0;
+    font-size: 5rem;
+  }
+  .submit{
+    padding:4rem 3rem;
+    font-size: 4rem;
+  }
+ footer {
+   height: 10rem;
+   position: relative;
+  }
+.copy{
+  padding: 1rem 0 0 0.5rem;
+  font-size: 3rem;
+}
+.bottom img{
+  height:10rem;
+ margin-left: 23rem;
+}
+.social_media img{
+  padding:1rem 2rem;
+  height: 8rem;
+}
+.social_media img:hover{
+  background-color: red;
+  border-radius: 5rem;
+}
+}
+/*===============================================Media query for 27" display ends=============================== */
+/*================================================Media query for tablet starts================================= */
+@media (min-width:601px) and (max-width:768px){
+  nav {
+    height: 28rem;
+    justify-content: center;
+    position: relative;
+  }
+  .header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .header img{
+    height: 8rem;
+    margin-left:26rem;}
+  .header img:hover {
+    background: black;
+}
+  .header ul {
+    width: 100%;
+    flex-direction: column;
+    margin-left: -1rem;  
+  }
+  .header ul li {
+    width: 100%;
+  }
+ .header ul li a {
+    width: 100%;
+    line-height: 2.8;
+    padding-top: 0.4rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+ nav ul li a:hover {
+   background: black;
+  }
+ .mainbody p{
+   font-size: 2rem;
+ }
+  .photo1 {
+    width: 100%;
+     flex-direction: column;
+    margin: 0;
+  }
+  .landscape {
+    width: 95%;
+    height: 38rem;
+    margin: 2rem auto;
+  }
+  .landscape img {
+    width: 95%;
+    height: 34rem;
+    margin-left: 1.7rem;
+    margin-top: 2rem;
+  }
+  .landscape img:hover {
+    transform: scale(1);
+    overflow: hidden;
+  }
+  .store {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .fdiv {
+    flex-direction: column;
+    border: none;
+  }
+  .pp{
+     width: 100%;
+  }
+  .pp img {
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 35rem;
+    height:35rem;
+  }
+  .personal {
+    margin:auto
+  }
+    .edu,
+  .skills,
+  .interest,
+  .occupation {
+    margin:auto;
+    border-right: none;
+  }
+  .personal h3,
+  .edu h3,
+  .skills h3,
+  .interest h3,
+  .occupation h3 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .personal p{
+    font-size:2.4rem;
+    text-align: center;
+  }
+  .edu li,
+  .skills li,
+  .interest li,
+  .occupation li {
+    font-size: 2.4rem;
+    margin: auto;
+  }
+  .personal,
+  .skills,
+  .edu,
+  .interest {
+    border-bottom: 4px solid black;
+    border-width: 100%;
+  }
+  section {
+    width: 88%;
+    height: 70rem;
+ }
+  .input{
+    margin-top: 2.5rem;
+    padding:2.4rem 0;
+    font-size: 3rem;
+  }
+  .submit{
+    padding: 2rem;
+    font-size: 3.5rem;
+  }
+  footer {
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .copy {
+    order: 3;
+    margin: auto;
+    font-size: 2.3rem;
+  }
+  .bottom img {
+    margin-top: 2rem;
+    margin-left: 26rem;
+    height: 8rem;
+  }
+  .social_media {
+    display: flex;
+     justify-content: center;
+    width: 100%;
+  }
+  .social_media img {
+    height: 6rem;
+    padding: 4rem 5rem;
+  }
+  .social_media img:hover {
+    background-color: black;
+  }
+}
+/*===========================================Media query for tablet ends========================================= */
