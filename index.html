@@ -1,58 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <!-- The head part of the HTML starts -->
   <head>
-    <link
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<!-- The link is used for adding icon that will be shown in the tab bar of the browser -->
+<link
       rel="icon"
       href="./static/personal-computer.ico"
       type="image/x-icon"
     />
+    <!-- The meta tag is used for reading the media query code in CSS file -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
+    <!-- The link is used to link the CSS file to the HTML code-->
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+    <!-- The head part of the HTML ends -->
+    <!-- The body part of the HTML starts -->
   <body>
+    <!-- The navigation bar code starts here -->
     <nav>
-      <div class="header">
-        <a href="index.html"><img src="./static/1.png" /></a>
+      <a href="index.html"><img src="./static/1.png" alt="Logo"/></a>
+        <!--The image for the logo is added using this code -->
+      <!-- The unordered code begins here used for making the links to the other pages -->
         <ul>
           <li><a href="index.html" class="present">HOME</a></li>
           <li><a href="portfolio.html">PORTFOLIO</a></li>
           <li><a href="cv.html">CV</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
-      </div>
     </nav>
-    <div class="image"><img src="./static/2.jpg" /></div>
+    <!--The navigation bar code ends here -->
+    <div class="image">
+      <img src="./static/2.jpg" alt="The Landing image for the website" /></div>
+    <!-- The div image made for the image that shows up on the landing page of the website -->
     <div class="mainbody">
+      <!-- The div mainbody made for the text that shows up on the landing page of the website -->
       <p>
         Hello, this is a portfolio website created by Sarthak Dhakal as an
-        assignment for the first term provided to us by our module leader back
-        there in the University of Northampton. This assignment is made on the basis of the things I have learnt on the first term of L4.
-        This assignm
+        assignment for the first term provided to us by our module leader. This assignment is devoloped on the
+        basis of the topics I have learnt during the first term of L4.<br>
+        It was a great way of polishing my HTML and CSS skills. I learnt how to use flex properly and similarly learnt the use of mediaqueries during this time.
+
       </p>
     </div>
+    <!-- The footer portion of the HTML begins -->
     <footer>
+      <!-- div for the copyright symbol -->
       <div class="copy">
-        Copyright &copy 2020
+        Copyright &copy; 2020
       </div>
+      <!-- Div for the logo at the bottom named "bottom"-->
       <div class="bottom">
-        <a href="index.html"><img src="./static/1.png" /></a>
-      </div>
-
-      <div class="social_media">
-        <a href="https://www.facebook.com/dhakal.sarthak" target="_blank"
-          ><img src="./static/5.png"
-        /></a>
-        <a href="https://www.instagram.com/sarthak_dhakal/" target="_blank"
-          ><img src="./static/4.png"
-        /></a>
-        <a href="https://twitter.com/sarthak_dhakal" target="_blank"
-          ><img src="./static/6.png"
-        /></a>
-        <a href="mailto:sarthakdhakal03@gmail.com" target="_blank"
-          ><img src="./static/7.png"
-        /></a>
+        <a href="index.html"><img src="./static/1.png" alt="Logo" /></a>
+        </div>
+        <!-- Div for links to the social media accounts linked font awesome named "social_media"-->
+          <div class="social_media">
+          <a href="https://www.facebook.com/dhakal.sarthak" target="_blank"
+            ><i class="fa fa-facebook-square" ></i>
+          </a>
+          <a href="https://www.instagram.com/sarthak_dhakal/" target="_blank"
+            ><i class="fa fa-instagram" ></i></a>
+          <a href="https://twitter.com/sarthak_dhakal" target="_blank"
+            ><i class="fa fa fa-twitter-square" ></i></a>
+          <a href="mailto:sarthakdhakal03@gmail.com" target="_blank"
+            ><i class="fa fa-envelope-square"></i></a>
       </div>
     </footer>
+      <!-- The footer portion of the HTML ends here -->
   </body>
+  <!-- The body portion of the HTML ends here -->
 </html>

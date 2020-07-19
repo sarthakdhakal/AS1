@@ -1,32 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+   <!-- The head part of the HTML starts -->
   <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       href="./static/personal-computer.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/contact.css" />
     <title>
       Contact
     </title>
   </head>
+      <!-- The head part of the HTML ends -->
+    <!-- The body part of the HTML starts -->
   <body>
+    <!-- The navigation bar code starts here -->
     <nav>
-      <div class="header">
-        <a href="index.html"><img src="./static/1.png" /></a>
-
+        <a href="index.html"><img src="./static/1.png" alt="Logo" /></a>
+        <!--The image for the logo is added using this code -->
+        <!-- The unordered code begins here-->
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="portfolio.html">PORTFOLIO</a></li>
           <li><a href="cv.html">CV</a></li>
           <li><a href="contact.html" class="present">CONTACT</a></li>
         </ul>
-      </div>
     </nav>
+      <!--The navigation bar code ends here -->
+      <!-- The div "contact" created to place background image -->
+    <div class="back">
+      <div class="links">
+        <h3>CONTACT ME</h3>
+        
+        <a href="https://www.linkedin.com/in/sarthak-dhakal-660b0a157" target="_blank"><i class="fa fa-linkedin-square" style="font-size:3rem;color:white;"></i>Linkedin</a>
+        <a href="https://www.github.com/sarthakdhakal" target="_blank"><i class="fa fa-github" style="font-size:3rem;color:white;"></i>Github</a>
+       <p><i class="fa fa-phone" style="font-size:2.5rem;color:white;"> +977 9860874991</i></p>
+     <p><i class="fa fa-map-marker" style="font-size:2.5rem;color:white;">  Kathmandu,Nepal</i></p>
+      </div>
+
     <div class="contact">
-      <section>
+      <!-- The section here is the background and the div that stores the form  -->
+      <div class="container">
+        <!-- The form here takes the input from the website -->
         <form action="#">
           <input type="text" class="input" placeholder="Your firstname here" />
           <input type="text" class="input" placeholder="Your lastname here" />
@@ -39,30 +58,34 @@
           ></textarea>
           <input type="submit" class="submit" value="Submit" />
         </form>
-      </section>
+      </div>
+        <!-- The section ends -->
     </div>
-    <footer>
+  </div>
+    <!-- The footer portion of the HTML begins -->
+      <footer>
+        <!-- div for the copyright symbol -->
       <div class="copy">
-        Copyright &copy 2020
+        Copyright &copy; 2020
       </div>
-      <div class="bottom">
-        <a href="index.html"><img src="./static/1.png" /></a>
-      </div>
-
-      <div class="social_media">
-        <a href="https://www.facebook.com/dhakal.sarthak" target="_blank"
-          ><img src="./static/5.png"
-        /></a>
-        <a href="https://www.instagram.com/sarthak_dhakal/" target="_blank"
-          ><img src="./static/4.png"
-        /></a>
-        <a href="https://twitter.com/sarthak_dhakal" target="_blank"
-          ><img src="./static/6.png"
-        /></a>
-        <a href="mailto:sarthakdhakal03@gmail.com" target="_blank"
-          ><img src="./static/7.png"
-        /></a>
+        <!-- Div for the logo at the bottom named "bottom"-->
+        <div class="bottom">
+          <a href="index.html"><img src="./static/1.png" alt="Logo" /></a>
+          </div>
+          <!-- Div for links to the social media accounts linked font awesome named "social_media"-->
+            <div class="social_media">
+            <a href="https://www.facebook.com/dhakal.sarthak" target="_blank"
+              ><i class="fa fa-facebook-square" ></i>
+            </a>
+            <a href="https://www.instagram.com/sarthak_dhakal/" target="_blank"
+              ><i class="fa fa-instagram" ></i></a>
+            <a href="https://twitter.com/sarthak_dhakal" target="_blank"
+              ><i class="fa fa fa-twitter-square" ></i></a>
+            <a href="mailto:sarthakdhakal03@gmail.com" target="_blank"
+              ><i class="fa fa-envelope-square"></i></a>
       </div>
     </footer>
+      <!-- The footer portion of the HTML ends here -->
   </body>
+  <!-- The body portion of the HTML ends here -->
 </html>

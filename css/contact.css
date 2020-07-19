@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&family=Ubuntu:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bahianita&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* imports google fonts from the fonts.google.com */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+}
+/* The values are assigned at * so that it works over all the div */ 
+/*=============================================================Header Starts================================================= */
+nav {
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  position: sticky; /*given so that the navbar does not move*/
+  top: 0rem;
+  display: flex;
+  justify-content: space-between; /* to place object to cover the area*/
+}
+nav img {
+  height: 5rem;
+}
+nav ul {
+  display: flex;
+}
+nav img:hover {
+  background: #ff0000; /* used to create animation effect while the mouse over the selection*/
+}
+nav ul li {
+  list-style: none; /* remove any listing style*/ 
+}
+nav ul li a {
+  display: block;
+  padding: 0 2rem;
+  color: #f2f0f0;
+  font-weight: bold;
+  line-height: 3;
+  text-decoration: none; /*to remove any effects added to the text*/
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+nav ul li a.present {/*used to create an effect on the current selection*/
+  color: #61c783;
+}
+  nav ul li a:hover/*used to create an effect while the mouse hovers*/
+   { background: #ff0000; 
+    color: #ffffff;
+}
+/* ===========================================================Header Ends================================================== */
+body {
+    display: flex;
+    flex-direction: column; /* to place the contents in the body in column based approach*/
+    min-height: 100vh; 
+    font-size: 10px;
+    background-color: rgb(0, 0, 0);
+    color: #f2f0f0;
+  }
+.back{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    }
+    .links{
+      width:20%;
+      display: flex;
+      flex-direction: column;
+    }
+    .links h3{
+      font-size: 4rem;
+      margin: 3rem auto;
+      font-family: 'Anton', sans-serif;
+      color: white;
+    }
+    .links a{
+      margin:1rem auto ;
+      font-size: 3.5rem;
+      text-decoration: none;
+      color: #ffffff;
+      font-family:"Inconsolata", monospace; /*defining which font to use*/
+    }
+    .links p{
+        margin: 1rem auto;
+        text-decoration: none;
+        color: #ffffff;
+        font-family:"Inconsolata", monospace;  
+    }
+    .links a:hover {
+      background: #ff0000;
+    }
+    .contact {
+      width: 80%;
+      background-image: url(../static/24.jpg);
+      background-position: bottom;
+      background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .container {
+      width: 40rem;
+      height: 45rem;
+      background-image: url(../static/23.jpg);
+      background-position: center;
+      border: 2px solid white;
+      border-radius: 2rem;
+      background-size: cover;
+      margin: 5rem auto 5rem auto;
+    }
+    .input {
+      display: flex;
+      width: 95%;
+      flex-direction: column;
+      margin: 1.5rem auto;
+      font-size: 1.4rem;
+      padding: 1.1rem 0;
+      color: lightyellow;
+      font-size: 2rem;
+      text-transform: none;
+      font-family: "Inconsolata", monospace;
+      background-color: transparent;
+    }
+    .submit {
+      display: flex;
+      background-color: white;
+      padding: 1.5rem;
+      font-family: "Bangers", cursive;
+      font-size: 1.6rem;
+      margin: auto;
+      color: black;
+    }
+    ::placeholder {
+      color: lightgoldenrodyellow;
+      opacity: 0.6;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      transition: background-color 20000000s;
+      -webkit-text-fill-color: #fff !important;/*used so that the form text box backgrounf remains transparent*/
+    }/*======================================================== Footer Starts=================================================== */
+footer {
+    background-color: black;
+    bottom: 0rem;
+    width: 100%;
+    height: 5rem;
+    position: relative;/*moves the footer along with the page being scrolled  */
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  .copy {
+    justify-content: flex-start;/*place the content at the lefmost part*/
+    margin-top: 2rem;
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+  .bottom img {
+    display: flex;
+    height: 5rem;
+    margin-left: 19rem;
+  }
+  .social_media {
+    display: flex;
+    justify-content: flex-end;/*place the content at the rightmost part*/
+  }
+  .social_media a i{
+    border-radius: 0rem;
+    margin: 0 1.5rem;
+    font-size: 5rem;
+    color: #f2f0f0;
+  }
+  .social_media a i:hover {
+    background: #ff0000;
+  }
+  /* ========================================================Footer Ends=================================================== */
+  /* ===============================================Media query for mobile starts====================================== */
+   @media (max-width: 600px) {
+    nav {
+      width: 100%;
+      height: 20rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+      padding: 0;
+    }
+    nav img{
+      margin-left:10rem; 
+     } 
+    nav img:hover {
+      background: black;
+    }
+  nav ul {
+      width: 100%;
+      flex-direction: column;
+      margin-left: -1rem;
+    }
+    nav ul li {
+      width: 100%;
+    }
+  nav ul li a {
+      width: 100%;
+      line-height: 2.5;
+      padding-top: 0.5rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    nav ul li a:hover {
+      background: black;
+    } .back{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .links{
+        width: 100%;
+        border-bottom: white 1px solid;
+      }
+      .links h3{
+        font-size: 2rem;
+        margin: 2rem auto;
+        
+      }
+      .links a{
+        margin:1rem auto ;
+        font-size: 2rem;  
+      }
+      .links a:hover {
+        background: black;
+      }
+      .links p{
+          margin: 1rem auto;
+        font-size: 2rem;
+          
+      }
+      .contact{
+        width: 100%
+      }
+      .container {
+        width: 96%;
+      }
+      footer {
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+      }
+      .copy {
+        order: 3;
+        margin: auto;
+      }
+      .bottom {
+        margin-bottom: 2rem;
+        margin-left: -8.7rem; 
+      }
+      .social_media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+      .social_media a i {
+        padding: 0 1rem;
+      }
+      .social_media a i    :hover {
+        background-color: black;
+      }
+    } 
+    /*==============================================Media query for mobile ends===================================== */
+    /*========================================= Media query for 27" display starts===================================*/
+    @media (min-width:2560px){
+      nav {
+        height: 10rem;
+        border-bottom: 3px solid white;  
+      }
+    nav img{
+        height: 10rem;
+      }
+      nav ul li a {
+          padding: 0.8rem 4.5rem;
+          font-size: 3rem;
+     }
+     nav ul li a:hover , .present{
+        height:8.4rem;
+     } .links h3{
+        font-size: 6rem;
+        margin: 5rem auto;
+      }
+    
+      .links a i{
+        margin:2rem auto ;
+        font-size: 7rem;
+    
+      }
+      .links p{
+          margin: 2rem auto;
+          font-size: 5rem;
+      }
+      .container{
+        height: 100rem;
+        width: 85rem;
+        margin-top:8rem;
+        border-radius: 4rem;
+      }
+      .input{
+        margin-top: 3rem;
+        padding:3rem 0;
+        font-size: 5rem;
+      }
+      .submit{
+        padding:4rem 3rem;
+        font-size: 4rem;
+      }
+     footer {
+       height: 10rem;
+       position: relative;
+       border-top: 3px solid white;  
+      }
+    .copy{
+      padding: 1rem 0 0 3rem;
+      font-size: 3.5rem;
+    }
+    
+    .bottom img{
+      height:10rem;
+    
+    }
+    .social_media a i{
+      padding:1rem 2.1rem;
+      font-size: 10rem;
+    }
+    .social_media a i:hover{
+      background-color: red;
+      border-radius: 5rem;
+    }
+    }
+    /*===============================================Media query for 27" display ends=============================== */
+    /*================================================Media query for tablet starts================================= */
+    @media (min-width:601px) and (max-width:768px){
+      nav {
+        display: flex;
+        height: 28rem;
+        justify-content: center;
+        position: relative;
+    
+        flex-direction: column;
+        padding: 0;
+      }
+     nav img{
+        display: flex;
+        height: 8rem;
+        margin:auto}
+      nav img:hover {
+        background: black;
+    }
+      nav ul {
+        width: 100%;
+        flex-direction: column;
+        margin-left: -1rem;  
+      }
+     nav ul li {
+        width: 100%;
+      }
+    nav ul li a {
+        width: 100%;
+        line-height: 2.8;
+        padding-top: 0.4rem;
+        text-align: center;
+        font-size: 1.6rem;
+      }
+     nav ul li a:hover {
+       background: black;
+      } .back{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .links{
+        width: 100%;
+        border-bottom: white 1px solid;
+      }
+      .links h3{
+        font-size: 4rem;
+        margin: 2rem auto;
+      }
+      .links a{
+        margin:1rem auto ;
+        font-size: 3rem;
+      }
+      .links a:hover {
+        background: black;
+      }
+      .links p{
+          margin: 1rem auto;
+        font-size: 3rem;
+          
+      }
+      .contact{
+        width: 100%}
+      .container {
+        width: 80%;
+        height: 70rem;
+     }
+      .input{
+        margin-top: 2.5rem;
+        padding:2.4rem 0;
+        font-size: 3rem;
+      }
+      .submit{
+        padding: 2rem;
+        font-size: 3.5rem;
+      } footer {
+        height: 28rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+      }
+      .copy {
+        order: 3;
+        margin: auto;
+        font-size: 2.3rem;
+      }
+      .bottom img {
+        margin-top: 2rem;
+        margin-left:25rem ;
+        height: 8rem;
+      }
+      .social_media {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .social_media a i{
+        font-size: 6rem;
+        padding: 4rem 5rem;
+      }
+      .social_media a i:hover {
+        background-color: black;
+      }
+    }
+    /* ===========================================Media query for tablet ends========================================= */ 
+    

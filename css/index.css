@@ -3,44 +3,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* imports google fonts from the fonts.google.com */
 * {
   margin: 0px;
   padding: 0px;
   font-size: 10px;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-size: 10px;
-  background-color: rgb(0, 0, 0);
-  color: #f2f0f0;
-}
+/* The values are assigned at * so that it works over all the div */ 
 /*=============================================================Header Starts================================================= */
 nav {
   height: 5rem;
   width: 100%;
   background-color: black;
   border-bottom: 1px solid rgb(255, 255, 255);
-  position: sticky;
+  position: sticky; /*given so that the navbar does not move*/
   top: 0rem;
-  
-}
-.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* to place object to cover the area*/
 }
-.header img {
+nav img {
   height: 5rem;
 }
-.header ul {
+nav ul {
   display: flex;
 }
-.header img:hover {
-  background: #ff0000;
+nav img:hover {
+  background: #ff0000; /* used to create animation effect while the mouse over the selection*/
 }
 nav ul li {
-  list-style: none;
+  list-style: none; /* remove any listing style*/ 
 }
 nav ul li a {
   display: block;
@@ -48,226 +40,104 @@ nav ul li a {
   color: #f2f0f0;
   font-weight: bold;
   line-height: 3;
-  text-decoration: none;
+  text-decoration: none; /*to remove any effects added to the text*/
   font-family: "Roboto Mono", monospace;
   font-weight: 700;
   font-size: 1.6rem;
 }
-nav ul li a.present {
+nav ul li a.present {/*used to create an effect on the current selection*/
   color: #61c783;
 }
-nav ul li a:hover {
-  background: #ff0000;
-  color: #ffffff;
+  nav ul li a:hover/*used to create an effect while the mouse hovers*/
+   { background: #ff0000; 
+    color: #ffffff;
 }
 /* ===========================================================Header Ends================================================== */
 /*========================================================Start For Homepage================================================= */
+body {
+  display: flex;
+  flex-direction: column; /* to place the contents in the body in column based approach*/
+  min-height: 100vh; 
+  font-size: 10px;
+  background-color: rgb(0, 0, 0);
+  color: #f2f0f0;
+}
 .image img {
-  width: 98%;
+  width: 100%; 
 }
 .mainbody p {
-  margin: 0 2rem 2rem 2rem;
-  text-align: center;
-  text-decoration: none;
+  margin: 0 2rem 2rem 2rem; /*used for providing the margin around the text*/
+  text-align: center;/*used to */
+   text-decoration: none;
   color: #ffffff;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.3rem;
 }
 /*========================================================End For Homepage================================================= */
-/*========================================================Portfolio Starts================================================  */
-.port {
-  background-image: url(../static/22.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.photo1 {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-  margin: 4rem auto;
-}
-.landscape {
-  width: 35%;
-  height: 30rem;
-  background-color: ivory;
-  margin: auto;
-}
-.landscape img {
-  width: 90%;
-  height: 90%;
-  margin: 1.5rem 0 0 2.3rem;
-  transition: 1s;
-}
-.landscape img:hover {
-  transform: scale(1.1);
-  overflow: hidden;
-}
-/*========================================================Portfolio Ends=================================================== */
-/*===========================================================CV Starts====================================================  */
-.store {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  background-color: rgba(255, 255, 255, 0.75);
-  color: black;
-  margin: 0 auto;
-  font-family: "Oswald", sans-serif;
-}
-.fdiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  border-bottom: 2px solid;
-}
-.pp {
-  width: 40%;
-  display: flex;
-}
-.pp img {
-  border: 5px solid rgba(0, 0,0, 0.06);
-  width: 20rem;
-  height: 20rem;
-  border-radius: 60%;
-  margin-left: 4rem;
-}
-.personal {
-  width: 60%;
-}
-.personal h3,.skills h3,.edu h3,.interest h3,.occupation h3 {
-  font-size: 4rem;
-  margin: auto;
-  font-weight: 700;
-  text-decoration: underline;
-}
-.personal p,.edu li,.skills li,.interest li,.occupation li {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-.edu,.interest {
-  width: 50%;
-  border-right: 2px solid black;
-  margin-left: 2rem;
-}
-.skills, .occupation  {
-  width: 50%;
- margin-left: 2rem;
-}
-/*===========================================================CV Ends======================================================= */
-/*========================================================Contact Starts================================================== */
-.contact {
-  background-image: url(../static/24.jpg);
-  background-position: bottom;
-  background-size: cover;
-background-repeat: no-repeat;
-}
-section {
-  width: 40rem;
-  height: 45rem;
-  background-image: url(../static/23.jpg);
-  background-position: center;
-  border: 2px solid white;
-  border-radius: 2rem;
-  background-size: cover;
-  margin: 5rem auto 5rem auto;
-}
-.input {
-  display: flex;
-  width: 95%;
-  flex-direction: column;
-  margin: 1.5rem auto;
-  font-size: 1.4rem;
-  padding: 1.1rem 0;
-  color: lightyellow;
-  font-size: 2rem;
-  text-transform: none;
-  font-family: "Inconsolata", monospace;
-  background-color: transparent;
-}
-.submit {
-  display: flex;
-  background-color: white;
-  padding: 1.5rem;
-  font-family: "Bangers", cursive;
-  font-size: 1.6rem;
-  margin: auto;
-  color: black;
-}
-::placeholder {
-  color: lightgoldenrodyellow;
-  opacity: 0.6;
-}
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  transition: background-color 20000000s;
-  -webkit-text-fill-color: #fff !important;
-}
+
 /*======================================================== Footer Starts=================================================== */
 footer {
   background-color: black;
   bottom: 0rem;
   width: 100%;
   height: 5rem;
-  position: relative;
+  position: relative;/*moves the footer along with the page being scrolled  */
   border-top: 1px solid white;
   display: flex;
   justify-content: space-between;
   margin-top: auto;
 }
 .copy {
-  justify-content: flex-start;
+  justify-content: flex-start;/*place the content at the lefmost part*/
   margin-top: 2rem;
   color: #ffffff;
   font-size: 1.6rem;
 }
 .bottom img {
+  display: flex;
   height: 5rem;
-  justify-content: center;
-  margin-left: 14rem;
+  margin-left: 19rem;
 }
 .social_media {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end;/*place the content at the rightmost part*/
 }
-.social_media img {
-  height: 5rem;
-  border-radius: 3rem;
-  padding: 0 1.2rem;
+.social_media a i{
+  border-radius: 0rem;
+  margin: 0 1.5rem;
+  font-size: 5rem;
+  color: #f2f0f0;
 }
-.social_media img:hover {
+.social_media a i:hover {
   background: #ff0000;
 }
 /* ========================================================Footer Ends=================================================== */
 /* ===============================================Media query for mobile starts====================================== */
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
   nav {
-    height: 20rem;
     width: 100%;
+    height: 20rem;
     display: flex;
     justify-content: center;
-  position: relative;
-  }
-  .header {
+    position: relative;
     flex-direction: column;
     padding: 0;
   }
-  .header img:hover {
+  nav img{
+    margin-left:10rem; 
+   } 
+  nav img:hover {
     background: black;
   }
-.header ul {
+nav ul {
     width: 100%;
     flex-direction: column;
     margin-left: -1rem;
   }
-  .header ul li {
+  nav ul li {
     width: 100%;
   }
- .header ul li a {
+nav ul li a {
     width: 100%;
     line-height: 2.5;
     padding-top: 0.5rem;
@@ -282,72 +152,7 @@ footer {
     flex-direction: column;
     margin: 0;
   }
-  .landscape {
-    width: 95%;
-    margin: 2rem auto;
-  }
-  .landscape img {
-    width: 95%;
-    margin-left: 0.8rem;
-  }
-  .landscape img:hover {
-    transform: scale(1);
-    overflow: hidden;
-  }
-  .store {
-    width: 100%;
-    padding: 2rem 0;
-  }
-  .fdiv {
-    flex-direction: column;
-    border: none;
-  }
-  .pp{
-      width: 100%;
-  }
-  .pp img {
-    margin: auto;
-    margin-bottom: 2rem;
-  }
-  .personal {
-    margin:auto
-  }
-  .edu,
-  .skills,
-  .interest,
-  .occupation {
-    margin:auto;
-    border-right: none;
-  }
-  .personal h3,
-  .edu h3,
-  .skills h3,
-  .interest h3,
-  .occupation h3 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .personal p{
-    font-size: 1.6rem;
-    text-align: center;
-  }
-  .edu li,
-  .skills li,
-  .interest li,
-  .occupation li{
-    font-size: 1.6rem;
-    margin: auto;
-  }
-  .personal,
-  .skills,
-  .edu,
-  .interest {
-    border-bottom: 2px solid black;
-    border-width: 100%;
-  }
-  section {
-    width: 98%;
-  }
+ 
   footer {
     height: 20rem;
     display: flex;
@@ -360,8 +165,8 @@ footer {
     margin: auto;
   }
   .bottom {
-    margin-left: -4rem;
     margin-bottom: 2rem;
+    margin-left: -8.7rem; 
   }
   .social_media {
     display: flex;
@@ -369,102 +174,57 @@ footer {
     justify-content: center;
     width: 100%;
   }
-  .social_media img {
-    padding: 0 2rem;
+  .social_media a i {
+    padding: 0 1rem;
   }
-  .social_media img:hover {
+  .social_media a i    :hover {
     background-color: black;
   }
-}
+} 
 /*==============================================Media query for mobile ends===================================== */
 /*========================================= Media query for 27" display starts===================================*/
 @media (min-width:2560px){
   nav {
     height: 10rem;
-    width: 100%;
+    border-bottom: 3px solid white;  
   }
-  .header img{
+nav img{
     height: 10rem;
   }
   nav ul li a {
-      padding: 1rem 5rem;
+      padding: 0.8rem 4.5rem;
       font-size: 3rem;
  }
-    .mainbody p{
-      font-size: 2.8rem;
+ nav ul li a:hover , .present{
+    height:8.4rem;
+ }
+.mainbody p{
+font-size: 3rem;
+padding: 0 4rem ;
     }
-   .photo1 {
+.photo1 {
     width: 100%;
     margin: 5rem auto;
- }
- .landscape{
-   width: 40%;
-   height: 70rem;
-   margin-bottom: 5rem;
-  margin-top: 5rem;
-  }
-  .landscape img {
-    width: 95%;
-    margin-top: 3.5rem;
-    margin-left: 2.3rem;
-  }
-  .landscape img:hover {
-  
-    overflow: hidden;
-  }
-  .pp img{
-    width: 38rem;
-    height: 38rem;
-  }
-  .personal {
-    margin:auto;
-  }
-    .personal h3,
-  .edu h3,
-  .skills h3,
-  .interest h3,
-  .occupation h3 {
-    font-size: 6.5rem;
-  }
-  .personal p,
-   .edu li,
-  .skills li,
-  .interest li,
-  .occupation li{
-    font-size: 4.4rem;
-  }
-    section{
-    height: 100rem;
-    width: 80rem;
-    margin-top:8rem;
-    border-radius: 4rem;
-  }
-  .input{
-    margin-top: 3rem;
-    padding:3rem 0;
-    font-size: 5rem;
-  }
-  .submit{
-    padding:4rem 3rem;
-    font-size: 4rem;
-  }
+}
  footer {
    height: 10rem;
    position: relative;
+   border-top: 3px solid white;  
   }
 .copy{
-  padding: 1rem 0 0 0.5rem;
-  font-size: 3rem;
+  padding: 1rem 0 0 3rem;
+  font-size: 3.5rem;
 }
+
 .bottom img{
   height:10rem;
- margin-left: 23rem;
+
 }
-.social_media img{
-  padding:1rem 2rem;
-  height: 8rem;
+.social_media a i{
+  padding:1rem 2.1rem;
+  font-size: 10rem;
 }
-.social_media img:hover{
+.social_media a i:hover{
   background-color: red;
   border-radius: 5rem;
 }
@@ -473,29 +233,30 @@ footer {
 /*================================================Media query for tablet starts================================= */
 @media (min-width:601px) and (max-width:768px){
   nav {
+    display: flex;
     height: 28rem;
     justify-content: center;
     position: relative;
-  }
-  .header {
+
     flex-direction: column;
     padding: 0;
   }
-  .header img{
+ nav img{
+    display: flex;
     height: 8rem;
-    margin-left:26rem;}
-  .header img:hover {
+    margin:auto}
+  nav img:hover {
     background: black;
 }
-  .header ul {
+  nav ul {
     width: 100%;
     flex-direction: column;
     margin-left: -1rem;  
   }
-  .header ul li {
+ nav ul li {
     width: 100%;
   }
- .header ul li a {
+nav ul li a {
     width: 100%;
     line-height: 2.8;
     padding-top: 0.4rem;
@@ -506,94 +267,13 @@ footer {
    background: black;
   }
  .mainbody p{
-   font-size: 2rem;
+    font-size: 2rem;
  }
   .photo1 {
     width: 100%;
      flex-direction: column;
-    margin: 0;
   }
-  .landscape {
-    width: 95%;
-    height: 38rem;
-    margin: 2rem auto;
-  }
-  .landscape img {
-    width: 95%;
-    height: 34rem;
-    margin-left: 1.7rem;
-    margin-top: 2rem;
-  }
-  .landscape img:hover {
-    transform: scale(1);
-    overflow: hidden;
-  }
-  .store {
-    width: 100%;
-    padding: 2rem 0;
-  }
-  .fdiv {
-    flex-direction: column;
-    border: none;
-  }
-  .pp{
-     width: 100%;
-  }
-  .pp img {
-    margin: auto;
-    margin-bottom: 2rem;
-    width: 35rem;
-    height:35rem;
-  }
-  .personal {
-    margin:auto
-  }
-    .edu,
-  .skills,
-  .interest,
-  .occupation {
-    margin:auto;
-    border-right: none;
-  }
-  .personal h3,
-  .edu h3,
-  .skills h3,
-  .interest h3,
-  .occupation h3 {
-    font-size: 3.5rem;
-    text-align: center;
-  }
-  .personal p{
-    font-size:2.4rem;
-    text-align: center;
-  }
-  .edu li,
-  .skills li,
-  .interest li,
-  .occupation li {
-    font-size: 2.4rem;
-    margin: auto;
-  }
-  .personal,
-  .skills,
-  .edu,
-  .interest {
-    border-bottom: 4px solid black;
-    border-width: 100%;
-  }
-  section {
-    width: 88%;
-    height: 70rem;
- }
-  .input{
-    margin-top: 2.5rem;
-    padding:2.4rem 0;
-    font-size: 3rem;
-  }
-  .submit{
-    padding: 2rem;
-    font-size: 3.5rem;
-  }
+ 
   footer {
     height: 28rem;
     display: flex;
@@ -608,20 +288,20 @@ footer {
   }
   .bottom img {
     margin-top: 2rem;
-    margin-left: 26rem;
+    margin-left:25rem ;
     height: 8rem;
   }
   .social_media {
     display: flex;
-     justify-content: center;
+    justify-content: center;
     width: 100%;
   }
-  .social_media img {
-    height: 6rem;
+  .social_media a i{
+    font-size: 6rem;
     padding: 4rem 5rem;
   }
-  .social_media img:hover {
+  .social_media a i:hover {
     background-color: black;
   }
 }
-/*===========================================Media query for tablet ends========================================= */
+/* ===========================================Media query for tablet ends========================================= */ 

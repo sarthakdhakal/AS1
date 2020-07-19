@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&family=Ubuntu:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bahianita&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* imports google fonts from the fonts.google.com */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+}
+/* The values are assigned at * so that it works over all the div */ 
+/*=============================================================Header Starts================================================= */
+nav {
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  position: sticky; /*given so that the navbar does not move*/
+  top: 0rem;
+  display: flex;
+  justify-content: space-between; /* to place object to cover the area*/
+}
+nav img {
+  height: 5rem;
+}
+nav ul {
+  display: flex;
+}
+nav img:hover {
+  background: #ff0000; /* used to create animation effect while the mouse over the selection*/
+}
+nav ul li {
+  list-style: none; /* remove any listing style*/ 
+}
+nav ul li a {
+  display: block;
+  padding: 0 2rem;
+  color: #f2f0f0;
+  font-weight: bold;
+  line-height: 3;
+  text-decoration: none; /*to remove any effects added to the text*/
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+nav ul li a.present {/*used to create an effect on the current selection*/
+  color: #61c783;
+}
+  nav ul li a:hover/*used to create an effect while the mouse hovers*/
+   { background: #ff0000; 
+    color: #ffffff;
+}
+  /* ===========================================================Header Ends================================================== */
+  
+  body {
+    display: flex;
+    flex-direction: column; /* to place the contents in the body in column based approach*/
+    min-height: 100vh; 
+    font-size: 10px;
+    background-color: rgb(0, 0, 0);
+    color: #f2f0f0;
+  }
+  .port {
+    background-image: url(../static/22.jpg); /*used to put an background image */
+   background-position: center; /* to set the centerpoint of the image on the center*/
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ .photo1 {
+   width: 100%;
+   display: flex;
+   flex-direction: row; /*to place the objects in the div in row based approach*/
+   justify-content: space-between;
+   overflow: hidden; 
+   margin: 4rem auto;
+ }
+ .landscape {
+   width: 35%;
+   height: 30rem;
+   background-color: ivory;
+   margin: auto;
+ }
+ .landscape img {
+   width: 90%;
+   height: 90%;
+   margin: 1.5rem 0 0 2.3rem;
+   transition: 1s;
+ }
+ .landscape img:hover {
+   transform: scale(1.1); /*to create zoom animation */
+   overflow: hidden;
+ }
+ 
+/*======================================================== Footer Starts=================================================== */
+footer {
+    background-color: black;
+    bottom: 0rem;
+    width: 100%;
+    height: 5rem;
+    position: relative;/*moves the footer along with the page being scrolled  */
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  .copy {
+    justify-content: flex-start;/*place the content at the lefmost part*/
+    margin-top: 2rem;
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+  .bottom img {
+    display: flex;
+    height: 5rem;
+    margin-left: 19rem;
+  }
+  .social_media {
+    display: flex;
+    justify-content: flex-end;/*place the content at the rightmost part*/
+  }
+  .social_media a i{
+    border-radius: 0rem;
+    margin: 0 1.5rem;
+    font-size: 5rem;
+    color: #f2f0f0;
+  }
+  .social_media a i:hover {
+    background: #ff0000;
+  }
+  /* ========================================================Footer Ends=================================================== */ 
+  /* ===============================================Media query for mobile starts====================================== */
+ @media (max-width: 600px) {
+    nav {
+      width: 100%;
+      height: 20rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+      padding: 0;
+    }
+    nav img{
+      margin-left:10rem; 
+     } 
+    nav img:hover {
+      background: black;
+    }
+  nav ul {
+      width: 100%;
+      flex-direction: column;
+      margin-left: -1rem;
+    }
+    nav ul li {
+      width: 100%;
+    }
+  nav ul li a {
+      width: 100%;
+      line-height: 2.5;
+      padding-top: 0.5rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    nav ul li a:hover {
+      background: black;
+    }
+
+    .photo1 {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+      }
+    .landscape {
+        width: 95%;
+        height: 28rem;
+        margin: 1.6rem auto;
+      }
+      .landscape img {
+        width: 95%;
+        margin-left: 0.8rem;
+      }
+      .landscape img:hover {
+        transform: scale(1);
+        overflow: hidden;
+      } 
+      footer {
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+      }
+      .copy {
+        order: 3;
+        margin: auto;
+      }
+      .bottom {
+        margin-bottom: 2rem;
+        margin-left: -8.7rem; 
+      }
+      .social_media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+      .social_media a i {
+        padding: 0 1rem;
+      }
+      .social_media a i    :hover {
+        background-color: black;
+      }
+    } 
+    /*==============================================Media query for mobile ends===================================== */
+    /*========================================= Media query for 27" display starts===================================*/
+@media (min-width:2560px){
+    nav {
+      height: 10rem;
+      border-bottom: 3px solid white;  
+    }
+  nav img{
+      height: 10rem;
+    }
+    nav ul li a {
+        padding: 0.8rem 4.5rem;
+        font-size: 3rem;
+   }
+   nav ul li a:hover , .present{
+      height:8.4rem;
+   }
+   .landscape{
+    width: 40%;
+      height: 70rem;
+      margin-bottom: 5rem;
+     margin-top: 5rem;
+     }
+     .landscape img {
+       width: 90%;
+       margin-top: 3.5rem;
+       margin-left: 5.3rem;
+     }
+     .landscape img:hover {
+       transform: scale(1.1);
+       overflow: hidden;
+     }
+     footer {
+        height: 10rem;
+        position: relative;
+        border-top: 3px solid white;  
+       }
+     .copy{
+       padding: 1rem 0 0 3rem;
+       font-size: 3.5rem;
+     }
+     
+     .bottom img{
+       height:10rem;
+     
+     }
+     .social_media a i{
+       padding:1rem 2.1rem;
+       font-size: 10rem;
+     }
+     .social_media a i:hover{
+       background-color: red;
+       border-radius: 5rem;
+     }
+     }
+     /*===============================================Media query for 27" display ends=============================== */
+     /*================================================Media query for tablet starts================================= */
+@media (min-width:601px) and (max-width:768px){
+    nav {
+      display: flex;
+      height: 28rem;
+      justify-content: center;
+      position: relative;
+  
+      flex-direction: column;
+      padding: 0;
+    }
+   nav img{
+      display: flex;
+      height: 8rem;
+      margin:auto}
+    nav img:hover {
+      background: black;
+  }
+    nav ul {
+      width: 100%;
+      flex-direction: column;
+      margin-left: -1rem;  
+    }
+   nav ul li {
+      width: 100%;
+    }
+  nav ul li a {
+      width: 100%;
+      line-height: 2.8;
+      padding-top: 0.4rem;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+   nav ul li a:hover {
+     background: black;
+    }
+    .photo1 {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;}
+    .landscape {
+        width: 95%;
+        height: 38rem;
+        margin: 2rem auto;
+    
+      }
+      .landscape img {
+        width: 95%;
+        height: 34rem;
+        margin-left: 1.7rem;
+        margin-top: 2rem;
+      }
+      .landscape img:hover {
+        transform: scale(1);
+        overflow: hidden;
+      }
+      footer {
+        height: 28rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+      }
+      .copy {
+        order: 3;
+        margin: auto;
+        font-size: 2.3rem;
+      }
+      .bottom img {
+        margin-top: 2rem;
+        margin-left:25rem ;
+        height: 8rem;
+      }
+      .social_media {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .social_media a i{
+        font-size: 6rem;
+        padding: 4rem 5rem;
+      }
+      .social_media a i:hover {
+        background-color: black;
+      }
+    }
+    /* ===========================================Media query for tablet ends========================================= */ 
+    
